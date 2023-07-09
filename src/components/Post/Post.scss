@@ -1,0 +1,60 @@
+.post {
+  width: 420px;
+
+  padding: 10px;
+
+  border: 2px solid black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1, 1.1);
+  }
+
+
+  &:nth-child(2n){
+    border: 2px solid red;
+    box-shadow: 0 1px 2px rgba(255, 0, 0, 0.15);
+    border-radius: 10px;
+
+    &:hover{
+      box-shadow: 0 6px 10px rgba(255, 0, 0, 0.4);
+    }
+  }
+
+  &:not(:last-child){
+
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+
+  }
+
+  &__title {
+    font-family: Ubuntu, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-bottom: 8px;
+  }
+
+  &__user {
+    font-size: 14px;
+    justify-self: end;
+    color: #555;
+  }
+
+  &__body {
+    font-size: 16px;
+  }
+}
+
